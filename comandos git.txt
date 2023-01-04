@@ -1,5 +1,9 @@
 GIT Librography
 
+# atualizar arquivos do repositorio remoto para o local
+git pull origin master
+
+
 @Github
 # git init
 git add .
@@ -15,5 +19,10 @@ git push origin master --force
 
 - erro de disconnect github push
 # git config --global core.compression 0
+
+### Manage urls git remote ####
+git remote -v
+git remote add github git@github.com:flashlan/Librography.git
+
 
 
