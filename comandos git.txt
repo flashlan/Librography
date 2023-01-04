@@ -1,0 +1,19 @@
+GIT Librography
+
+@Github
+# git init
+git add .
+git commit -m "mensagem"
+git remote -v
+git config --global core.compression 0
+git config --global pack.window 1
+git push -u github master
+
+@Gitea
+git push origin master --force
+
+
+- erro de disconnect github push
+# git config --global core.compression 0
+
+
