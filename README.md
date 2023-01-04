@@ -7,18 +7,21 @@
 ### Clone this repository 
 
 **HTTPS:** 
-git clone https://git.librography.org/ci/Librography.git
+
+`git clone https://git.librography.org/ci/Librography.git`
 
 or 
 
-git clone https://github.com/flashlan/Librography.git
+`git clone https://github.com/flashlan/Librography.git`
 
-**SSH:** 
-git clone git@git.librography.org:ci/Librography.git
+**SSH:**
+
+
+`git clone git@git.librography.org:ci/Librography.git`
 
 or 
 
-git clone  git@github.com:flashlan/Librography.git
+`git clone  git@github.com:flashlan/Librography.git`
 
 
 
