@@ -1,7 +1,14 @@
 GIT Librography
 
+git add .
+git commit -m "mensagem"
+# Enviar mudanças (ambos)
+git push origin master
+
 # atualizar arquivos do repositorio remoto para o local
 git pull origin master
+
+
 
 
 @Github
@@ -24,5 +31,6 @@ git push origin master --force
 git remote -v
 git remote add github git@github.com:flashlan/Librography.git
 
-
+# setar multiplos remotes para atualizar com um comando (push)
+git remote set-url --add --push origin git@github.com:flashlan/Librography.git
 
