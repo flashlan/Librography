@@ -8,8 +8,28 @@ git push origin master
 # atualizar arquivos do repositorio remoto para o local
 git pull origin master
 
+#Rotulando (o 1b2e1d63ff representa os 10 primeiros caracteres do id de commit)
+git log
+git tag 1.0.0 1b2e1d63ff
 
+# Branchs
+git checkout -b funcionalidade_x
+# retorne para o master usando
+git checkout master
+# e remova o branch da seguinte forma
+git branch -d funcionalidade_x
+# envie o branch para seu repositório remoto
+git push origin <funcionalidade_x>
 
+# merge (para fazer merge de um outro branch ao seu branch ativo)
+git diff <branch origem> <branch destino>
+git merge <branch>
+
+# sobrescrever alterações locais
+git checkout -- <arquivo>
+# ou recupere o histórico mais recente do servidor
+git fetch origin
+git reset --hard origin/master
 
 @Github
 # git init
