@@ -6,7 +6,7 @@
 
 ### Clone this repository 
 
-**HTTPS:** 
+***HTTPS:*** 
 
 `git clone https://git.librography.org/ci/Librography.git`
 
@@ -14,7 +14,7 @@ or
 
 `git clone https://github.com/flashlan/Librography.git`
 
-**SSH:**
+***SSH:***
 
 
 `git clone git@git.librography.org:ci/Librography.git`
@@ -22,27 +22,6 @@ or
 or 
 
 `git clone  git@github.com:flashlan/Librography.git`
-
-
-
-### Creating a new repository on the command line
-
-```
-touch README.md
-git init
-
-git add README.md
-git commit -m "first commit"
-git remote add origin https://git.librography.com/flashlan/Librography.git
-git push -u origin master
-```
-
-### Pushing an existing repository from the command line
-
-```
-git remote add origin https://git.librography.com/flashlan/Librography.git
-git push -u origin master
-```
 
 ## Librography
 
