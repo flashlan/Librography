@@ -1,17 +1,23 @@
-A Free and Opensource Library Manager writen in Java
+#### A Free and Opensource Library Manager writen in Java
 
-Um Gerenciador de Bibliotecas grátis e opensource escrito em Java
+#### Um Gerenciador de Bibliotecas grátis e opensource escrito em Java
+
+------
 
 ### Clone this repository 
 
-HTTPS: 
+**HTTPS:** 
 git clone https://git.librography.org/ci/Librography.git
+
 or 
+
 git clone https://github.com/flashlan/Librography.git
 
-SSH: 
+**SSH:** 
 git clone git@git.librography.org:ci/Librography.git
+
 or 
+
 git clone  git@github.com:flashlan/Librography.git
 
 
@@ -35,7 +41,7 @@ git remote add origin https://git.librography.com/flashlan/Librography.git
 git push -u origin master
 ```
 
-## GoldenOwl
+## Librography
 
 ---------
 
