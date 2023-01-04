@@ -1,8 +1,18 @@
+A Free and Opensource Library Manager writen in Java
+
+Um Gerenciador de Bibliotecas grátis e opensource escrito em Java
+
 ### Clone this repository 
 
-HTTPS: https://git.librography.org/flashlan/Librography.git
+HTTPS: 
+git clone https://git.librography.org/ci/Librography.git
+or 
+git clone https://github.com/flashlan/Librography.git
 
-SSH: git@git.librography.org:flashlan/Librography.git
+SSH: 
+git clone git@git.librography.org:ci/Librography.git
+or 
+git clone  git@github.com:flashlan/Librography.git
 
 
 
