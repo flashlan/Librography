@@ -1,0 +1,7 @@
+-- remover VISIBLE e linha com create table if no exist
+ carateres estranhios mysql
+ build for ant
+ 
+ 
+ convert sysntax: mysql to postgresql -> sqlite
+ 

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+#Name[en_US]=Librography 
+Name=Librography
+Comment=Librography Library Manager
+#Exec=command arguments
+Exec= sh /opt/Librography/Librography.sh
+Categories=Application;Office;Education;
+Type=Application
+#Icon=/path/to/custom/icon

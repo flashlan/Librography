@@ -1,0 +1,6 @@
+programs Onedrive:
+
+https://1drv.ms/u/s!Asa0dgo7peGpvgAlXM91A1YRd9V_?e=GcIWh9
+
+Windows :
+php 7.3.27  / MySql 5.0.12-dev /  PhpMyAdmin 5.1.0 / Apacha 2.4.46 / Java Jdk 8 / netbeans 8.2
