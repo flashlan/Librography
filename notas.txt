@@ -2,6 +2,16 @@
  carateres estranhios mysql
  build for ant
  
+ finalizado script postgresSetup.bat
+ --> proceder alteraçao opcional do banco
+		usar Pgadmin 
+ --> Criar Windows Installer
+		Inno setup - script criado
+		./setup/data is in .zip format
+		Inno get files from C:\Librography to create installer
+		
  
- convert sysntax: mysql to postgresql -> sqlite
+ 
+ 
+ convert syntax: mysql to postgresql -> sqlite
  

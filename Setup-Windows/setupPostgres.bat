@@ -50,9 +50,11 @@ SET PATH=%PATH%;C:\Librography_data\postgres\bin
 psql -U postgres -c "CREATE DATABASE %dbname%;"
 psql -U postgres -c "CREATE USER '%dbuser%'@'localhost' IDENTIFIED BY '%userpassword%';"
 psql -U postgres -c "GRANT ALL PRIVILEGES ON %dbuser%.* TO '%dbuser%'@'localhost';"
-
 psql -U postgres -c "FLUSH PRIVILEGES;"
-psql -U postgres -c "source script-posgresql.sql"
+psql -U postgres -f script-postgresql.sql -d applibrography
+Rem psql -U postgres -c "\c applibrography; \i script-postgresql.sql;"
+Rem psql -U postgres -c "source script-posgresql.sql"
+Rem psql -U postgres -c "\i script-postgresql.sql;"
 echo Done.
 echo "Postgresql user created."
 echo "Username:   %dbuser%"
