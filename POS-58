@@ -1,0 +1,248 @@
+
+--boundary_.oOo._Snqhyu+/SG4HszZZtytMRd3v0FGoHi0g
+Content-Length: 1743
+Content-Type: application/octet-stream
+X-File-MD5: d9331075374c4128af9f5ede93427114
+X-File-Mtime: 1709774054
+X-File-Path: /Git/Librography/README.md
+
+#### A Free and Opensource Library Manager writen in Java
+
+#### Um Gerenciador de Bibliotecas grátis e opensource escrito em Java
+
+------
+
+### Clone this repository 
+
+***HTTPS:*** 
+
+`git clone https://git.librography.org/ci/Librography.git`
+
+or 
+
+`git clone https://github.com/flashlan/Librography.git`
+
+***SSH:***
+
+
+`git clone git@git.librography.org:ci/Librography.git`
+
+or 
+
+`git clone  git@github.com:flashlan/Librography.git`
+
+## Librography
+
+---------
+
+Library Manager System writen in Java-Swing available for Windows, Linux and MacOs.
+
+-------
+
+**TODO:**
+
+* implementar busca de capas de livros
+* modulo pago de conslta por protocolo z39.50;
+* Licensa de Software
+* Modulo de serial key. 
+* Botao "Sobre";
+* modulo  de registro de isbn
+* Procurar/setar	Instalador do Windows
+* Procurar instalador MacOS
+* pasta de configuracoes em "~/.goldenOwl"/ criado por script Pacote deb, rpm
+* App fist run para ver os e crair pastas de acordo
+* ~~instalador mysql + script criação banco de dados em first run (create if no exits)~~
+* ON CONFLICT DO NOTHING import xlsx em janela de opcoes  de importacao
+* relatorios de emprestimos e devolucoes
+* limitar consultas de select * para especificas nos códigos.
+* suporte a internacionalização
+* build for ant
+* convert syntax: mysql to postgresql -> sqlite
+
+---
+**BUGS:**
+
+* remover mensagens terminal (aparecem no linux)
+* remover VISIBLE e linha com create table if no exist
+* carateres estranhios mysql
+* Regra de negocio emprestimo? atrasado mas marca como dias restantes e ta gerando multa(com mais de 15 dias)
+* livro cadastro dublica se alterar isbn.
+* Botão salver em cartao faz nada (abrir explorer na url).
+
+---
+Softwares:
+https://cloud.librography.org/index.php/s/3kQZ9DkmAGaCWw6
+
+
+--boundary_.oOo._Snqhyu+/SG4HszZZtytMRd3v0FGoHi0g
+Content-Length: 183
+Content-Type: application/octet-stream
+X-File-MD5: ced01805635eb599aee309edbe3dd97e
+X-File-Mtime: 1709774054
+X-File-Path: /Git/Librography/Requires.txt
+
+programs Onedrive:
+
+https://1drv.ms/u/s!Asa0dgo7peGpvgAlXM91A1YRd9V_?e=GcIWh9
+
+Windows :
+php 7.3.27  / MySql 5.0.12-dev /  PhpMyAdmin 5.1.0 / Apacha 2.4.46 / Java Jdk 8 / netbeans 8.2
+--boundary_.oOo._Snqhyu+/SG4HszZZtytMRd3v0FGoHi0g
+Content-Length: 0
+Content-Type: application/octet-stream
+X-File-MD5: d41d8cd98f00b204e9800998ecf8427e
+X-File-Mtime: 1709774054
+X-File-Path: /Git/Librography/USB001
+
+
+--boundary_.oOo._Snqhyu+/SG4HszZZtytMRd3v0FGoHi0g
+Content-Length: 3545
+Content-Type: application/octet-stream
+X-File-MD5: 02a8eff44739e93f8c66b9b047ee8f23
+X-File-Mtime: 1709774054
+X-File-Path: /Git/Librography/build.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="Librography" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Librography.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             called after javac compilation
+      -pre-compile-single:       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilation of JUnit tests
+      -pre-compile-test-single:  called before javac compilation of single JUnit test
+      -post-compile-test-single: called after javac compilation of single JUunit test
+      -pre-jar:                  called before JAR building
+      -post-jar:                 called after JAR building
+      -post-clean:               called after cleaning build products
+
+    (Targets beginning with '-' are not intended to be called on their own.)
+
+    Example of inserting an obfuscator after compilation could look like this:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    For list of available properties check the imported 
+    nbproject/build-impl.xml file. 
+
+
+    Another way to customize the build is by overriding existing main targets.
+    The targets of interest are: 
+
+      -init-macrodef-javac:     defines macro for javac compilation
+      -init-macrodef-junit:     defines macro for junit execution
+      -init-macrodef-debug:     defines macro for class debugging
+      -init-macrodef-java:      defines macro for class execution
+      -do-jar:                  JAR building
+      run:                      execution of project 
+      -javadoc-build:           Javadoc generation
+      test-report:              JUnit report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="Librography-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    -->
+</project>
+
+--boundary_.oOo._Snqhyu+/SG4HszZZtytMRd3v0FGoHi0g
+Content-Length: 1367
+Content-Type: application/octet-stream
+X-File-MD5: 628d660bad97b84355d4f6fcaa855a96
+X-File-Mtime: 1709774054
+X-File-Path: /Git/Librography/comandos git.txt
+
+GIT Librography
+
+git add .
+git commit -m "mensagem"
+# Enviar mudanças (ambos)
+git push origin master
+
+# atualizar arquivos do repositorio remoto para o local
+git pull origin master
+
+#Rotulando (o 1b2e1d63ff representa os 10 primeiros caracteres do id de commit)
+git log
+git tag 1.0.0 1b2e1d63ff
+
+# Branchs
+git checkout -b funcionalidade_x
+# retorne para o master usando
+git checkout master
+# e remova o branch da seguinte forma
+git branch -d funcionalidade_x
+# envie o branch para seu repositório remoto
+git push origin <funcionalidade_x>
+
+# merge (para fazer merge de um outro branch ao seu branch ativo)
+git diff <branch origem> <branch destino>
+git merge <branch>
+
+# sobrescrever alterações locais
+git checkout -- <arquivo>
+# ou recupere o histórico mais recente do servidor
+git fetch origin
+git reset --hard origin/master
+
+@Github
+# git init
+git add .
+git commit -m "mensagem"
+git remote -v
+git config --global core.compression 0
+git config --global pack.window 1
+git push -u github master
+
+@Gitea
+git push origin master --force
+
+
+- erro de disconnect github push
+# git config --global core.compression 0
+
+### Manage urls git remote ####
+git remote -v
+git remote add github git@github.com:flashlan/Librography.git
+
+# setar multiplos remotes para atualizar com um comando (push)
+git remote set-url --add --push origin git@github.com:flashlan/Librography.git
+
+
+--boundary_.oOo._Snqhyu+/SG4HszZZtytMRd3v0FGoHi0g
+Content-Length: 82
+Content-Type: application/octet-stream
+X-File-MD5: d6fe4af2f67849f1c01635b0ed4c443d
+X-File-Mtime: 1709774055
+X-File-Path: /Gi

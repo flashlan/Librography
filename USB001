@@ -1,0 +1,226 @@
+
+--boundary_.oOo._txe2xDkOygSEQR12qUOipzJhzJtjWjsN
+Content-Length: 3545
+Content-Type: application/octet-stream
+X-File-MD5: 02a8eff44739e93f8c66b9b047ee8f23
+X-File-Mtime: 1709774054
+X-File-Path: /Git/Librography/build.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="Librography" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Librography.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             called after javac compilation
+      -pre-compile-single:       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilation of JUnit tests
+      -pre-compile-test-single:  called before javac compilation of single JUnit test
+      -post-compile-test-single: called after javac compilation of single JUunit test
+      -pre-jar:                  called before JAR building
+      -post-jar:                 called after JAR building
+      -post-clean:               called after cleaning build products
+
+    (Targets beginning with '-' are not intended to be called on their own.)
+
+    Example of inserting an obfuscator after compilation could look like this:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    For list of available properties check the imported 
+    nbproject/build-impl.xml file. 
+
+
+    Another way to customize the build is by overriding existing main targets.
+    The targets of interest are: 
+
+      -init-macrodef-javac:     defines macro for javac compilation
+      -init-macrodef-junit:     defines macro for junit execution
+      -init-macrodef-debug:     defines macro for class debugging
+      -init-macrodef-java:      defines macro for class execution
+      -do-jar:                  JAR building
+      run:                      execution of project 
+      -javadoc-build:           Javadoc generation
+      test-report:              JUnit report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="Librography-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    -->
+</project>
+
+--boundary_.oOo._txe2xDkOygSEQR12qUOipzJhzJtjWjsN
+Content-Length: 1367
+Content-Type: application/octet-stream
+X-File-MD5: 628d660bad97b84355d4f6fcaa855a96
+X-File-Mtime: 1709774054
+X-File-Path: /Git/Librography/comandos git.txt
+
+GIT Librography
+
+git add .
+git commit -m "mensagem"
+# Enviar mudanças (ambos)
+git push origin master
+
+# atualizar arquivos do repositorio remoto para o local
+git pull origin master
+
+#Rotulando (o 1b2e1d63ff representa os 10 primeiros caracteres do id de commit)
+git log
+git tag 1.0.0 1b2e1d63ff
+
+# Branchs
+git checkout -b funcionalidade_x
+# retorne para o master usando
+git checkout master
+# e remova o branch da seguinte forma
+git branch -d funcionalidade_x
+# envie o branch para seu repositório remoto
+git push origin <funcionalidade_x>
+
+# merge (para fazer merge de um outro branch ao seu branch ativo)
+git diff <branch origem> <branch destino>
+git merge <branch>
+
+# sobrescrever alterações locais
+git checkout -- <arquivo>
+# ou recupere o histórico mais recente do servidor
+git fetch origin
+git reset --hard origin/master
+
+@Github
+# git init
+git add .
+git commit -m "mensagem"
+git remote -v
+git config --global core.compression 0
+git config --global pack.window 1
+git push -u github master
+
+@Gitea
+git push origin master --force
+
+
+- erro de disconnect github push
+# git config --global core.compression 0
+
+### Manage urls git remote ####
+git remote -v
+git remote add github git@github.com:flashlan/Librography.git
+
+# setar multiplos remotes para atualizar com um comando (push)
+git remote set-url --add --push origin git@github.com:flashlan/Librography.git
+
+
+--boundary_.oOo._txe2xDkOygSEQR12qUOipzJhzJtjWjsN
+Content-Length: 82
+Content-Type: application/octet-stream
+X-File-MD5: d6fe4af2f67849f1c01635b0ed4c443d
+X-File-Mtime: 1709774055
+X-File-Path: /Git/Librography/manifest.mf
+
+Manifest-Version: 1.0
+X-COMMENT: Main-Class will be added automatically by build
+
+
+--boundary_.oOo._txe2xDkOygSEQR12qUOipzJhzJtjWjsN
+Content-Length: 152
+Content-Type: application/octet-stream
+X-File-MD5: 65e114837e9f9d946230fca68cdb2cec
+X-File-Mtime: 1709774055
+X-File-Path: /Git/Librography/notas.txt
+
+-- remover VISIBLE e linha com create table if no exist
+ carateres estranhios mysql
+ build for ant
+ 
+ 
+ convert sysntax: mysql to postgresql -> sqlite
+ 
+--boundary_.oOo._txe2xDkOygSEQR12qUOipzJhzJtjWjsN
+Content-Length: 14458
+Content-Type: application/octet-stream
+X-File-MD5: 9d1a2c0ba3f2cd99ce2369590fa55df8
+X-File-Mtime: 1709774055
+X-File-Path: /Git/Librography/script.sql
+
+-- MySQL Script generated by MySQL Workbench
+-- 11/02/21 00:19:36
+-- Model: New Model    Version: 1.0
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema applibrography
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema applibrography
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `applibrography` DEFAULT CHARACTER SET utf8 ;
+USE `applibrography` ;
+
+-- -----------------------------------------------------
+-- Table `applibrography`.`tb_leitores`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `applibrography`.`tb_leitores` (
+  `id` INT(8) ZEROFILL NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(100) NULL,
+  `rg` VARCHAR(30) NULL DEFAULT NULL,
+  `cpf` VARCHAR(20) NULL DEFAULT NULL,
+  `email` VARCHAR(200) NULL DEFAULT NULL,
+  `telefone` VARCHAR(30) NULL DEFAULT NULL,
+  `celular` VARCHAR(30) NULL DEFAULT NULL,
+  `cep` VARCHAR(100) NULL DEFAULT NULL,
+  `endereco` VARCHAR(255) NULL DEFAULT NULL,
+  `numero` VARCHAR(50) NULL DEFAULT NULL,
+  `complemento` VARCHAR(200) NULL DEFAULT NULL,
+  `bairro` VARCHAR(100) NULL DEFAULT NULL,
+  `cidade` VARCHAR(100) NULL DEFAULT NULL,
+  `estado` VARCHAR(2) NULL DEFAULT NULL,
+  `tipo` VARCHAR(15) NULL,
+  `is_locked` TINYINT NULL,
+  `curso` VARCHAR(45) NULL,
+  `curso_ano` VARCHAR(45) NULL,
+  `qtd_emprestimos` INT(3) NULL,
+  `emprestmax` INT NULL,
+  `observacoes` VARCHAR(225) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 00000100
+DEFAULT C
