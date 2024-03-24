@@ -4,4 +4,6 @@
 # Mac executa shell script?
 # yes run: sh myscript
 
-./7Za -e ../setup/data
+
+mkdir /Application/Librography.app
+./7Za x ../setup/data
